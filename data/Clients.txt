@@ -1,0 +1,25 @@
+Mohammed || Abu Hadhoud || mo.abuhadhoud@gmail.com || 0799997886 || A101 || 3456 || 4400.000000
+Ali || Mohamed || ali.mohamed@gmail.com || 01203340802 || A102 || 2345 || 10900.000000
+Adli || Haddad || adli.haddad@gmail.com || 0898388383 || A103 || 3456 || 1080.000000
+Jamil || Adli || jamil.adli@gmail.com || 023123123 || A104 || 3456 || 8912.000000
+Lina || Loay || lina.loay@gmail.com || 7123400007 || A107 || 2347 || 123.000000
+Mazem || Kareem || mazem.kareem@gmail.com || 0898234567 || A106 || 3456 || 8020.000000
+Lama || Karmi || lama.karmi@gmail.com || 0898388388 || A107 || 3456 || 1234.000000
+Ghandi || Omran || ghandi.omran@gmail.com || 0123400001 || A108 || 3456 || 7000.000000
+Hamed || Abbas || hamed.abbas@gmail.com || 0883800008 || A109 || 3456 || 5000.000000
+Hilal || Mazin || hilal.mazin@gmail.com || 0123443332 || A110 || 3456 || 19700.000000
+Maher || Yousef || maher.yousef@gmail.com || 0212300111 || A111 || 3434 || 40000.000000
+Ghada || mohamed || ghadamo@gmail.com || 91203342778 || A112 || 34567 || 5000.000000
+malek || mohamed || mmkaspariv@gmail.com || 77283345623 || A114 || 4536 || 10000.000000
+Qusta || diago || qustadiago@gmail.com || 19204403802 || A113 || 5678 || 3000.000000
+Yousef || eltahan || joeltahan3@gmail.net || 0124080224 || A115 || 5143 || 520.000000
+Ahmed || tarek || azhary@yahoo.com || 0120031241 || A116 || 3454 || 9500.000000
+Mosaad || Mohsen || momohsen@go.gov || 01203340607 || A117 || 566 || 200.000000
+Baher || Ashraf || BaherAshraf@noon.onin || 0124567543 || A118 || 6789 || 5683.000000
+Mostaf || frahat || tofyfarahat55@gmail.com || 0123243532 || A119 || 67894 || 93000.000000
+Alloush || ALSHARQAWI || WCXWscdc@cdlk.cic || 01334352254 || A121 || 7643 || 3900.000000
+Omar || Mohamed || omaralshrq@gmail.com || 012033405060 || A120 || 7687 || 708.000000
+mosa || marwan || moma@gmail.com || 01123456732 || A123 || 67898 || 2000.000000
+VF || FDV || SDVSD@HJVF.FD || 5678654332 || A124 || 67687 || 32456.000000
+Taha || elfkey || taha.elfky@gmail.com || 012345454332 || Client1 || 222 || 1200.000000
+osama || Ali || osamaali@gmail.com || 01203340802 || C100 || 2222 || 1000.000000

@@ -1,0 +1,110 @@
+|   project_structure.txt
+|   
++---.vscode
+|       c_cpp_properties.json
+|       launch.json
+|       settings.json
+|       tasks.json
+|       
++---core
+|       clsAdmin.h
+|       clsBankClient.h
+|       clsCurrency.h
+|       clsPerson.h
+|       clsTransactionLogger.h
+|       
++---data
+|       Admins.text
+|       AdminsSessionLog.txt
+|       AllTransactions.txt
+|       Clients.txt
+|       ClientsSessionLog.txt
+|       Currencies.txt
+|       
++---src
+|       SmartBank System & ATM.cpp
+|       SmartBank System & ATM.exe
+|       
++---utils
+|       clsDate.h
+|       clsInputValidate.h
+|       clsString.h
+|       clsUtil.h
+|       
+\---Welcome_Screen
+    |   clsStartUpBankSystem.h
+    |   
+    +---base_screen
+    |
+    |      Global.h 
+    |      clsScreen.h
+    |       
+    \---startup
+        +---1)Login_As_Admin
+        |   |   clsAdminLoginScreen.h
+        |   |   clsAdminDashboard_Menu.h
+        |   |   
+        |   \---Admin_Dashboard_Screens
+        |       +---Manage_Clients_Menu
+        |       |   |   clsManageClientsScreen.h
+        |       |   |   
+        |       |   \---Manage_Clients_Screens
+        |       |           clsClientsListScreen.h
+        |       |           clsAddNewClientScreen.h
+        |       |           clsUpdateClientScreen.h
+        |       |           clsFindClientScreen.h
+        |       |           clsDeleteClientScreen.h
+        |       |           clsTotalBalancesScreen.h
+        |       |           clsClientsSessionLogScreen.h
+        |       |           
+        |       +---Manage_Admins_Menu
+        |       |   |   clsManageAdminMenu.h
+        |       |   |   
+        |       |   \---Manage_Admins_Screens
+        |       |           clsListAdminsScreen.h
+        |       |           clsAddNewAdminScreen.h
+        |       |           clsFindAdminScreen.h
+        |       |           clsDeleteAdminScreen.h
+        |       |           clsUpdateAdminScreen.h
+        |       |           clsAdminsSessionLogScreen.h
+        |       |           clsCurrentAdminSessionScreen.h
+        |       |           
+        |       +---Currency_Menu
+        |       |   |   clsCurrencyMenu.h
+        |       |   |   
+        |       |   \---Currency_Screens
+        |       |           clsAddNewCurrencyScreen.h
+        |       |           clsCurrencyConverterScreen.h
+        |       |           clsDeleteCurrencyScreen.h
+        |       |           clsFindCurrencyScreen.h
+        |       |           clsListCurrencysScreen.h
+        |       |           clsUpdateCurrencyScreen.h
+        |       |           
+        |       \---Transactions_Menu
+        |           |   clsTransactionsMenu.h
+        |           |   
+        |           \---Transactions_Screens
+        |                   clsDepositScreen.h
+        |                   clsTransferHistoryScreen.h
+        |                   clsTransferScreen.h
+        |                   clsWithdrawScreen.h
+        |                   
+        +---2)ATM
+        |   |   clsClientLoginScreen.h
+        |   |   clsClientDashboard_Menu.h
+        |   |   
+        |   \---ATM_Screens
+        |           clsATMQuickWithdrawScreen.h
+        |           clsATMNormalWithdrawScreen.h
+        |           clsATMDepositScreen.h
+        |           clsATMCheckBalanceScreen.h
+        |           clsCurrentClientSessionScreen.h
+        |           clsATMTransferHistoryScreen.h
+        |           clsATMTransferScreen.h
+        |           clsATMChangePINScreen.h
+        |           
+        +---3)Creat_Admin_Account
+        |       clsCreatAdminAccout.h	 =====> Go to clsAddNewAdminScreen.h
+        |       
+        \---4)Creat_Client_Account
+                clsCreatClientAccount.h   =====> Go to clsAddNewClientScreen.h
