@@ -72,7 +72,7 @@ public:
         bool FindAgain = true;
         while (FindAgain)
         {
-            system("cls");
+            clsConsole::ClearScreen();
 
             _DrawScreenHeader("\t Find Client Screen");
 

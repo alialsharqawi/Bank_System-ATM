@@ -155,7 +155,7 @@ private:
     static void _GoBackToManageAdminsMenu()
     {
         cout << "\n\nPress any key to go back to Manage Admins Menu...";
-        system("pause>0");
+        clsConsole::Pause();
         ShowManageAdminsMenu();
     }
 
@@ -197,41 +197,41 @@ private:
         switch (ManageAdminsMenuOption)
         {
         case enManageAdminsMenuOptions::eListAdmins:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowListAdminsScreen();
             _GoBackToManageAdminsMenu();
             break;
 
         case enManageAdminsMenuOptions::eAddNewAdmin:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowAddNewAdminScreen();
             _GoBackToManageAdminsMenu();
             break;
 
         case enManageAdminsMenuOptions::eFindAdmin:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowFindAdminScreen();
             _GoBackToManageAdminsMenu();
             break;
 
         case enManageAdminsMenuOptions::eUpdateAdmin:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowUpdateAdminScreen();
             _GoBackToManageAdminsMenu();
             break;
 
         case enManageAdminsMenuOptions::eDeleteAdmin:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowDeleteAdminScreen();
             _GoBackToManageAdminsMenu();
             break;
         case enManageAdminsMenuOptions::eMySessionsHistory:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowMYSessionsHistory();
             _GoBackToManageAdminsMenu();
             break;
         case enManageAdminsMenuOptions::eAdminsSessions:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowAdminSessionsHistory();
             _GoBackToManageAdminsMenu();
             break;
@@ -244,7 +244,7 @@ private:
 public:
     static void ShowManageAdminsMenu()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\tManage Admins Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  Manage Admins Menu\n";

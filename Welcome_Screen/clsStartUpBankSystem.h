@@ -35,7 +35,7 @@ private:
     static void _GoBackToStartMenu()
     {
         cout << "Press any Key to Back Start Menu.";
-        system("pause>0");
+        clsConsole::Pause();
         ShowStartUpMenu();
     }
 
@@ -45,14 +45,14 @@ private:
 
     static void _HandleLoginToAdminPanel()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         clsAdminLoginScreen::ShowLoginScreen();
         _GoBackToStartMenu();
     }
 
     static void _HandleOpenATMInterface()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         
         clsClientLoginScreen::ShowLoginScreen();
         _GoBackToStartMenu();
@@ -60,14 +60,14 @@ private:
 
     static void _HandleRegisterNewClient()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         clsCreatClientAccount::CreateNewClient();
         _GoBackToStartMenu();
     }
 
     static void _HandleRegisterNewAdmin()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         clsCreatAdminAccount::CreateNewAdmin();
         _GoBackToStartMenu();
     }
@@ -93,7 +93,7 @@ private:
             break;
 
         case eExitSystem:
-            system("cls");
+            clsConsole::ClearScreen();
             _SetColor(10);
             cout << "\n"
                  << setw(37) << left << "" << "Exiting system...\n";
@@ -108,7 +108,7 @@ public:
 
     static void ShowStartUpMenu()
     {
-        system("cls");
+        clsConsole::ClearScreen();
 
         // Title Box
         _SetColor(14); // Gold border

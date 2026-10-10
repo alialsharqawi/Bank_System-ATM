@@ -117,7 +117,7 @@ public:
         bool DeleteAgain = true;
         while (DeleteAgain)
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _DrawScreenHeader("\t   Delete Admin Screen");
 
             string AdminUsername = _ReadAdminUsername();

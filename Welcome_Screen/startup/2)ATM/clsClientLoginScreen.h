@@ -101,7 +101,7 @@ private:
 public:
     static void ShowLoginScreen()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\t Login Screen As Client");
         _Login();
     }

@@ -158,7 +158,7 @@ private:
     static void _GoBackToCurrencyMenue()
     {
         cout << "\n\nPress any key to go back to Currency Exchange Menue...";
-        system("pause>0");
+        clsConsole::Pause();
         ShowCurrencyMenue();
     }
 
@@ -191,34 +191,34 @@ private:
         switch (CurrencyMenueOption)
         {
         case enCurrencyMenueOptions::eListCurrencys:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowListCurrencyScreen();
             _GoBackToCurrencyMenue();
             break;
 
         case enCurrencyMenueOptions::eAddNewCurrency:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowAddNewCurrencyScreen();
             _GoBackToCurrencyMenue();
             break;
 
         case enCurrencyMenueOptions::eFindCurrency:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowFindCurrencyScreen();
             _GoBackToCurrencyMenue();
             break;
 
         case enCurrencyMenueOptions::eUpdateCurrency:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowUpdateCurrencyScreen();
             _GoBackToCurrencyMenue();
             break;
         case enCurrencyMenueOptions::eCurrencyConverter:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowCurrencyConverterScreen();
             _GoBackToCurrencyMenue();
         case enCurrencyMenueOptions::eDeleteCurrency:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowDeleteCurrencyScreen();
             _GoBackToCurrencyMenue();
             break;
@@ -231,7 +231,7 @@ private:
 public:
     static void ShowCurrencyMenue()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\t   Currency Exchange Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  Currency Exchange Menu\n";

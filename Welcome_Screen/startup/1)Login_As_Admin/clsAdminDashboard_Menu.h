@@ -87,7 +87,7 @@ private:
     static void _GoBackToMainMenu()
     {
         cout << setw(37) << left << "" << "\n\tPress any key to go back to Main MenuS...";
-        system("pause>0"); // wait for any press
+        clsConsole::Pause(); // wait for any press
         ShowAdminDashboard();
     }
 
@@ -144,27 +144,27 @@ private:
         switch (MainMenuOption)
         {
         case enMainMenuOptions::eManageClientsMenu:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowManageClintMenu();
             _GoBackToMainMenu();
             break;
         case enMainMenuOptions::eManageAdminsMenu:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowManageAdminMenu();
             _GoBackToMainMenu();
             break;
         case enMainMenuOptions::eTransactionsMenu:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTransactionsMenu();
             _GoBackToMainMenu();
             break;
         case enMainMenuOptions::eCurrencyMenu:
-            system("cls");
+            clsConsole::ClearScreen();
             _CurrencyMenu();
             _GoBackToMainMenu();
             break;
         case enMainMenuOptions::eLogout:
-            system("cls");
+            clsConsole::ClearScreen();
             _Logout();
             _SetColor(10);
             cout << setw(37) << left << "" << "\n\tYou are logged out successfully.\n";
@@ -177,7 +177,7 @@ private:
 public:
     static void ShowAdminDashboard()
     {
-        system("cls");
+        clsConsole::ClearScreen();
 
         _DrawScreenHeader("\tAdmin Dashboard Screen");
         

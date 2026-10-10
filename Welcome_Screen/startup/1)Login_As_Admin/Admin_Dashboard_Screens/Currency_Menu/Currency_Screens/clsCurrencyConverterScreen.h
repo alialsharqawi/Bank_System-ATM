@@ -100,7 +100,7 @@ public:
         while (CalcAgain)
         {
 
-            system("cls");
+            clsConsole::ClearScreen();
             _DrawScreenHeader("\tCurrency Calculation Screen");
 
             string CurrencyCodeFrom, CurrencyCodeTo;

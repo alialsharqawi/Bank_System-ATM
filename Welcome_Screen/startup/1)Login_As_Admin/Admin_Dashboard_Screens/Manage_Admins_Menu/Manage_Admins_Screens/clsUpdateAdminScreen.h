@@ -325,7 +325,7 @@ public:
         bool UpdateAgain = true;
         while (UpdateAgain)
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _DrawScreenHeader("\t   Update Admin Screen");
 
             string AdminUsername = _ReadAdminUsername();

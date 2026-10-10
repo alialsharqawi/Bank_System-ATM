@@ -88,7 +88,7 @@ private:
     static void _GoBackToATMMenu()
     {
         cout << setw(37) << left << "" << "\n\tPress any key to go back to ATM Menu...\n";
-        system("pause>0");
+        clsConsole::Pause();
         ShowATMMainMenu();
     }
 
@@ -144,55 +144,55 @@ private:
         switch (ATMMenuOption)
         {
         case enATMMenuOptions::eQuickWithdraw:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowQuickWithdrawScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eNormalWithdraw:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowNormalWithdrawScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eDeposit:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowDepositScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eCheckBalance:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowCheckBalanceScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eTransfer:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTransferScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eTransferHistory:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTransferHistoryScreen();
             _GoBackToATMMenu();
             break;
             
         case enATMMenuOptions::eChangePIN:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowChangePINScreen();
             _GoBackToATMMenu();
             break;
 
         case enATMMenuOptions::eMySessionHistory:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowMySessionHistoryScreen();
             _GoBackToATMMenu();
             break;
 
         case enATMMenuOptions::eLogout:
-            system("cls");
+            clsConsole::ClearScreen();
             _Logout();
             _SetColor(10);
             cout << setw(37) << left << "" << "\n\tLogged out successfully. Thank you!\n";
@@ -205,7 +205,7 @@ private:
 public:
     static void ShowATMMainMenu()
     {
-        system("cls");
+        clsConsole::ClearScreen();
 
         _DrawScreenHeader("\tATM Main Menu");
         

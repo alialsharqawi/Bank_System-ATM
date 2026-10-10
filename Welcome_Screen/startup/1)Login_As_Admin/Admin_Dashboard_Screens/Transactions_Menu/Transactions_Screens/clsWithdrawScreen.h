@@ -140,7 +140,7 @@ public:
                     _SetColor(14);
                     cout << "\nPress any key to Enter Valid amount.";
                     _SetColor(7);
-                    system("pause>0");
+                    clsConsole::Pause();
                     cout << endl;
                 }
             }

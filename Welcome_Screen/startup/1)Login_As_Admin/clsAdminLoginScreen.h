@@ -87,7 +87,7 @@ private:
             {
                 // cout << "\nYou have exceeded the maximum number of login attempts.\n";
                 // cout << "Exiting the program...\n";
-                // system("pause>0");
+                // clsConsole::Pause();
                 // exit(0);
                 
                 _DrawEndScreen("    Too many failed login attempts");
@@ -104,7 +104,7 @@ private:
 public:
     static void ShowLoginScreen()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\t Login Screen As Admin");
         _Login();
     }

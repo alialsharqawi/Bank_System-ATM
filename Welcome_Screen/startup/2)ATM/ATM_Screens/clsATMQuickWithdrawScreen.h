@@ -178,7 +178,7 @@ private:
 public:
     static void ShowQuickWithdrawScreen()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\t  Quick Withdraw");
 
         _PrintClientCard();

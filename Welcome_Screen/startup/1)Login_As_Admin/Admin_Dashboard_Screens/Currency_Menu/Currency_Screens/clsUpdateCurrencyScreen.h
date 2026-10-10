@@ -105,7 +105,7 @@ public:
         bool UpdateAgain = true;
         while (UpdateAgain)
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _DrawScreenHeader("\tUpdate Currency Screen");
             cout << "Search by [1] Currency Code or [2] Country?";
             _SetColor(12);
@@ -139,7 +139,7 @@ public:
                     _SetColor(14); // Yellow warning
                     cout << "\n⚠ Go back.\n";
                     _SetColor(7);
-                    Sleep(2000); // to make sure user read the message for 1 second
+                    clsConsole::Sleep(2000); // to make sure user read the message for 1 second
                     continue;
                 }
                 CurrencyCode = clsString::UpperAllString(CurrencyCode);
@@ -169,7 +169,7 @@ public:
                 }
                 if (cont)
                 {
-                    Sleep(2000); // to make sure user read the message for 1 second
+                    clsConsole::Sleep(2000); // to make sure user read the message for 1 second
                     continue;
                 } // go back to start of do while loop
             }
@@ -186,7 +186,7 @@ public:
                     _SetColor(14); // Yellow warning
                     cout << "\n⚠ Go back.\n";
                     _SetColor(7);
-                    Sleep(2000); // to make sure user read the message for 1 second
+                    clsConsole::Sleep(2000); // to make sure user read the message for 1 second
                     continue;
                 }
                 Country = clsString::UpperAllString(Country);
@@ -214,7 +214,7 @@ public:
                 }
                 if (cont)
                 {
-                    Sleep(2000); // to make sure user read the message for 1 second
+                    clsConsole::Sleep(2000); // to make sure user read the message for 1 second
                     continue;
                 } // go back to start of do while loop
             }

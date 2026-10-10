@@ -185,7 +185,7 @@ public:
                 cout << "\n⚠ \aInsufficient balance in the source account.\n";
                 _SetColor(14);
                 cout << "\nPress any key to Enter Valid amount.";
-                system("pause>0");
+                clsConsole::Pause();
                 _SetColor(7);
                 cout << endl;
                 continue;

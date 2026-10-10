@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <thread>
 #include <chrono>
-#include <windows.h>
+#include "../../utils/clsConsole.h"
 
 #include "../../core/clsAdmin.h"
 #include "Global.h"
@@ -19,7 +19,7 @@ protected:
     // Change the text color in the console screen
     static void _SetColor(int color)
     {
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+        clsConsole::SetColor(color);
     }
     static void _printCentered(const string& text, int consoleWidth = 80) {
         int len = text.length();
@@ -32,7 +32,7 @@ protected:
     {
         if (ClearScreen)
         {
-            system("cls");
+            clsConsole::ClearScreen();
         }
         _SetColor(14); // Gold for borders
         cout << "\n\n\t\t\t\t\t======================================";

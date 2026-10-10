@@ -310,19 +310,23 @@ SmartBank-System/
 - C++ Compiler (g++, clang, MSVC)
 - Windows / Linux / macOS terminal
 
-### ▶️ Compilation (g++)
+### ▶️ Build with CMake
+
+The project uses C++17 and can be built with CMake on Windows, Linux, and macOS:
+
 ```bash
-g++ "SmartBank System & ATM.cpp" -o SmartBankSystem
+cmake -S . -B build
+cmake --build build --config Release
 ```
 
 ### ▶️ Run
 
 ```bash
-./SmartBankSystem        # Linux / macOS
-SmartBankSystem.exe      # Windows
+./build/SmartBankSystem                    # Linux / macOS
+.\build\Release\SmartBankSystem.exe        # Windows (Visual Studio generator)
 ```
 
-Or simply open the project in **Visual Studio** and run/build.
+Run the executable with the repository root as the working directory so the application can access the `data/` files. GitHub Actions builds the project on Windows, Linux, and macOS for every push and pull request.
 
 ---
 

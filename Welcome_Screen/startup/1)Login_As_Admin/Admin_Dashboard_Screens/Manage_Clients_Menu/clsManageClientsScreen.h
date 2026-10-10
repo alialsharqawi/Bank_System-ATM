@@ -155,7 +155,7 @@ private:
     static void _GoBackToManageClientsMenu()
     {
         cout << "\n\nPress any key to go back to Manage Clients Menu...";
-        system("pause>0");
+        clsConsole::Pause();
         ShowManageClientsMenu();
     }
     
@@ -237,36 +237,36 @@ private:
         switch (ManageClientsMenuOption)
         {
         case enManageClientsMenuOptions::eListClients:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowAllClientsScreen();
             _GoBackToManageClientsMenu();
             break;
 
         case enManageClientsMenuOptions::eAddNewClient:
-            system("cls");
+            clsConsole::ClearScreen();
             _AddNewClientScreen();
             _GoBackToManageClientsMenu();
             break;
 
         case enManageClientsMenuOptions::eFindClient:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowFindClientScreen();
             _GoBackToManageClientsMenu();
             break;
 
         case enManageClientsMenuOptions::eUpdateClient:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowUpdateClientScreen();
             _GoBackToManageClientsMenu();
             break;
 
         case enManageClientsMenuOptions::eDeleteClient:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowDeleteClientScreen();
             _GoBackToManageClientsMenu();
             break;
         case enManageClientsMenuOptions::eClientsSessions:
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowClientSessionsHistory();
             _GoBackToManageClientsMenu();
             break;
@@ -279,7 +279,7 @@ private:
 public:
     static void ShowManageClientsMenu()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\tManage Clients Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  Manage Clients Menu\n";

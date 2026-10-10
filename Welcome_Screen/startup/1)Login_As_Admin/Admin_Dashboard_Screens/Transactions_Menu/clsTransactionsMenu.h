@@ -107,7 +107,7 @@ private:
     static void _GoBackToTransactionsMenu()
     {
         cout << "\n\nPress any key to go back to Transactions Menu...";
-        system("pause>0");
+        clsConsole::Pause();
         ShowTransactionsMenu();
     }
 
@@ -117,7 +117,7 @@ private:
         {
         case enTransactionsMenuOptions::eDeposit:
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowDepositScreen();
             _GoBackToTransactionsMenu();
             break;
@@ -125,7 +125,7 @@ private:
 
         case enTransactionsMenuOptions::eWithdraw:
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowWithdrawScreen();
             _GoBackToTransactionsMenu();
             break;
@@ -133,21 +133,21 @@ private:
 
         case enTransactionsMenuOptions::eTransferMoney:
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTransferScreen();
             _GoBackToTransactionsMenu();
             break;
         }
         case enTransactionsMenuOptions::eTransferHistory:
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTransferHistoryScreen();
             _GoBackToTransactionsMenu();
             break;
         }
         case enTransactionsMenuOptions::eTotalBalance:
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _ShowTotalBalancesScreen();
             _GoBackToTransactionsMenu();
             break;
@@ -163,7 +163,7 @@ private:
 public:
     static void ShowTransactionsMenu()
     {
-        system("cls");
+        clsConsole::ClearScreen();
         _DrawScreenHeader("\t Transactions Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t  Transactions Menu\n";

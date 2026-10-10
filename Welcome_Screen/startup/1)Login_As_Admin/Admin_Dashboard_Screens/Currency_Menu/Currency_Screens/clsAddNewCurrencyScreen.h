@@ -96,7 +96,7 @@ public:
         bool AddAgain = true;
         while (AddAgain)
         {
-            system("cls");
+            clsConsole::ClearScreen();
             _DrawScreenHeader("\tAdd New Currency Screen");
 
             //////////////////////////////////////////

@@ -79,6 +79,7 @@ End of Documentation
 #include <iostream>
 #include <string>
 #include <limits>
+#include <climits>
 #include <cfloat>
 #include <algorithm>
 #include <sstream>
